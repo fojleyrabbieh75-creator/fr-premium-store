@@ -2,144 +2,903 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FR Premium Store - Get Your Favorite Premium Subscriptions</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>FR Premium Store | Premium Digital Services</title>
+
+    <meta name="description"
+          content="FR Premium Store থেকে বিভিন্ন premium digital services সম্পর্কে জানুন এবং WhatsApp-এর মাধ্যমে সহজে যোগাযোগ করুন।">
+
+    <meta name="keywords"
+          content="FR Premium Store, Premium Services, YouTube Premium, Canva Pro, CapCut Pro, Gemini Premium, Facebook Verification, Instagram Verification">
+
+    <meta name="theme-color" content="#08111f">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FR Premium Store">
+    <meta property="og:description"
+          content="আপনার প্রয়োজনীয় Premium Digital Services এক জায়গায়।">
+    <meta property="og:type" content="website">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1>FR Premium <span>Store</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">হোম</a></li>
-                <li><a href="#products">সার্ভিসসমূহ</a></li>
-                <li><a href="#why-us">কেন আমরা?</a></li>
-                <li><a href="#contact">যোগাযোগ</a></li>
-            </ul>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <span class="logo-main">FR Premium</span>
+            <span class="logo-sub">STORE</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="মেনু খুলুন"
+            aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <nav class="nav" id="mainNav">
+
+            <a href="#home">হোম</a>
+            <a href="#products">সার্ভিস</a>
+            <a href="#how-to-order">অর্ডার নিয়ম</a>
+            <a href="#why-us">কেন আমরা</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">যোগাযোগ</a>
+
         </nav>
-        <div class="cart-btn" onclick="openWhatsApp('General Inquiry')">
-            <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ
-        </div>
+
+        <button
+            class="header-whatsapp"
+            type="button"
+            onclick="openWhatsApp('General Inquiry')">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+
+        </button>
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>ডুয়েল কারেন্সি কার্ড ছাড়াই কিনুন আপনার পছন্দের প্রিমিয়াম সার্ভিস ও ভেরিফিকেশন!</h2>
-            <p>Facebook & Instagram Blue Verification, YouTube Premium, CapCut Pro, Gemini Pro এবং Canva Pro এখন সুলভ মূল্যে, ইনস্ট্যান্ট ডেলিভারি।</p>
-            <a href="#products" class="btn">সার্ভিসগুলো দেখুন</a>
-        </div>
-    </section>
 
-    <!-- Products/Services Section -->
-    <section id="products" class="products-section">
-        <h2>আমাদের প্রিমিয়াম সার্ভিসসমূহ</h2>
-        <p class="section-subtitle">পছন্দের সার্ভিসটি সিলেক্ট করে মূল্যের জন্য সরাসরি WhatsApp-এ মেসেজ দিন</p>
-        <div class="product-grid">
-            
-            <!-- Service 1 -->
-            <div class="product-card">
-                <div class="badge">Popular</div>
-                <i class="fa-solid fa-circle-check product-icon" style="color: #1877f2;"></i>
-                <h3>Facebook Verification & Ads</h3>
-                <p>Facebook Blue Verification এবং প্রফেশনাল Facebook Ads সার্ভিস।</p>
-                <div class="price">ইনবক্সে মূল্য জানুন</div>
-                <button class="buy-btn" onclick="openWhatsApp('Facebook Blue Verification & Ads Service')">অর্ডার করতে WhatsApp করুন</button>
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    Premium Digital Services
+
+                </div>
+
+                <h1>
+
+                    আপনার প্রয়োজনীয়
+
+                    <span>Premium Services</span>
+
+                    এক জায়গায়
+
+                </h1>
+
+                <p>
+                    YouTube Premium, Canva Pro, CapCut Pro,
+                    Gemini Premium এবং আরও বিভিন্ন ডিজিটাল সার্ভিস
+                    সম্পর্কে জানতে ও অর্ডার করতে সরাসরি আমাদের সঙ্গে যোগাযোগ করুন।
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="primary-btn">
+
+                        সার্ভিস দেখুন
+
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </a>
+
+                    <button
+                        class="secondary-btn"
+                        type="button"
+                        onclick="openWhatsApp('General Inquiry')">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp করুন
+
+                    </button>
+
+                </div>
+
+                <div class="hero-trust">
+
+                    <div>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>বিভিন্ন সার্ভিস</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-comments"></i>
+                        <span>সরাসরি যোগাযোগ</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Customer Support</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!-- Service 2 -->
-            <div class="product-card">
-                <div class="badge">Trending</div>
-                <i class="fa-brands fa-instagram product-icon" style="color: #e4405f;"></i>
-                <h3>Instagram Blue Verification</h3>
-                <p>অফিশিয়াল নিয়মে আপনার ইনস্টাগ্রাম অ্যাকাউন্ট ভেরিফাইড করুন।</p>
-                <div class="price">ইনবক্সে মূল্য জানুন</div>
-                <button class="buy-btn" onclick="openWhatsApp('Instagram Blue Verification Service')">অর্ডার করতে WhatsApp করুন</button>
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section id="products" class="products-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    OUR SERVICES
+                </span>
+
+                <h2>
+                    আমাদের
+                    <span>Premium Services</span>
+                </h2>
+
+                <p>
+                    পছন্দের সার্ভিসটি নির্বাচন করুন।
+                    মূল্য, মেয়াদ ও বিস্তারিত জানতে WhatsApp-এ যোগাযোগ করুন।
+                </p>
+
             </div>
 
-            <!-- Service 3 -->
-            <div class="product-card">
-                <i class="fa-brands fa-youtube product-icon" style="color: #ff0000;"></i>
-                <h3>YouTube Premium</h3>
-                <p>অ্যাড-ফ্রি মিউজিক এবং ব্যাকগ্রাউন্ড প্লে সুবিধা।</p>
-                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
-                <button class="buy-btn" onclick="openWhatsApp('YouTube Premium Service')">অর্ডার করতে WhatsApp করুন</button>
+
+            <div class="product-grid">
+
+
+                <!-- Facebook -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+
+                        <span class="service-badge popular">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <h3>Facebook Verification & Ads</h3>
+
+                    <p>
+                        Facebook verification এবং advertising-related
+                        service সম্পর্কে বিস্তারিত জানতে যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Service Details
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('Facebook Verification & Ads Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <!-- Instagram -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <span class="service-badge trending">
+                            Trending
+                        </span>
+
+                    </div>
+
+                    <h3>Instagram Blue Verification</h3>
+
+                    <p>
+                        Instagram verification service-এর
+                        availability, requirements ও মূল্য জানতে যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Service Details
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('Instagram Blue Verification Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <!-- YouTube -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>YouTube Premium</h3>
+
+                    <p>
+                        YouTube Premium-এর সুবিধা ও subscription
+                        options সম্পর্কে বিস্তারিত জানতে যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Premium Service
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('YouTube Premium Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <!-- CapCut -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon capcut">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>CapCut Pro</h3>
+
+                    <p>
+                        Premium editing features এবং Pro service
+                        সম্পর্কে বিস্তারিত জানতে সরাসরি যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Pro Features
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('CapCut Pro Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <!-- Gemini -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon gemini">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                    </div>
+
+                    <h3>Gemini Premium</h3>
+
+                    <p>
+                        Google Gemini-এর premium service ও available
+                        options সম্পর্কে জানতে আমাদের সঙ্গে যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Premium Access
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('Gemini Premium Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <!-- Canva -->
+
+                <article class="product-card">
+
+                    <div class="card-top">
+
+                        <div class="service-icon canva">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+
+                        <span class="service-badge value">
+                            Best Value
+                        </span>
+
+                    </div>
+
+                    <h3>Canva Pro</h3>
+
+                    <p>
+                        Premium design tools, templates ও Pro features
+                        সম্পর্কে বিস্তারিত জানতে যোগাযোগ করুন।
+                    </p>
+
+                    <div class="service-info">
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Pro Features
+                        </span>
+
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Support
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="buy-btn"
+                        type="button"
+                        onclick="openWhatsApp('Canva Pro Service')">
+
+                        বিস্তারিত জানতে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
             </div>
 
-            <!-- Service 4 -->
-            <div class="product-card">
-                <i class="fa-solid fa-video product-icon" style="color: #000000;"></i>
-                <h3>CapCut Pro</h3>
-                <p>প্রিমিয়াম ভিডিও এডিটিং টেমপ্লেট ও ফিচার আনলকড।</p>
-                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
-                <button class="buy-btn" onclick="openWhatsApp('CapCut Pro Service')">অর্ডার করতে WhatsApp করুন</button>
+        </section>
+
+
+        <!-- ================= HOW TO ORDER ================= -->
+
+        <section id="how-to-order" class="how-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    HOW IT WORKS
+                </span>
+
+                <h2>
+                    অর্ডার করা
+                    <span>খুব সহজ</span>
+                </h2>
+
+                <p>
+                    কয়েকটি সহজ ধাপেই আপনার পছন্দের সার্ভিস সম্পর্কে জানতে পারবেন।
+                </p>
+
             </div>
 
-            <!-- Service 5 -->
-            <div class="product-card">
-                <i class="fa-solid fa-wand-magic-sparkles product-icon" style="color: #4285f4;"></i>
-                <h3>Gemini Premium</h3>
-                <p>গুগলের অ্যাডভান্সড এআই (Gemini Advanced) সাবস্ক্রিপশন।</p>
-                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
-                <button class="buy-btn" onclick="openWhatsApp('Gemini Premium Service')">অর্ডার করতে WhatsApp করুন</button>
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <span class="step-number">01</span>
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <h3>সার্ভিস নির্বাচন</h3>
+
+                    <p>
+                        আপনার প্রয়োজন অনুযায়ী একটি সার্ভিস নির্বাচন করুন।
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span class="step-number">02</span>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <h3>WhatsApp-এ যোগাযোগ</h3>
+
+                    <p>
+                        সার্ভিসের বিস্তারিত জানতে সরাসরি WhatsApp-এ মেসেজ করুন।
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span class="step-number">03</span>
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <h3>বিস্তারিত জেনে নিন</h3>
+
+                    <p>
+                        মূল্য, মেয়াদ, availability ও প্রয়োজনীয় তথ্য জেনে নিন।
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <span class="step-number">04</span>
+
+                    <i class="fa-solid fa-check"></i>
+
+                    <h3>অর্ডার সম্পন্ন</h3>
+
+                    <p>
+                        সবকিছু নিশ্চিত হওয়ার পর অর্ডার সম্পন্ন করুন।
+                    </p>
+
+                </div>
+
             </div>
 
-            <!-- Service 6 -->
-            <div class="product-card">
-                <div class="badge">Best Value</div>
-                <i class="fa-solid fa-palette product-icon" style="color: #00c4cc;"></i>
-                <h3>Canva Pro</h3>
-                <p>প্রিমিয়াম ডিজাইন টুলস, গ্রাফিক্স এবং আনলিমিটেড এলিমেন্টস।</p>
-                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
-                <button class="buy-btn" onclick="openWhatsApp('Canva Pro Service')">অর্ডার করতে WhatsApp করুন</button>
+        </section>
+
+
+        <!-- ================= WHY US ================= -->
+
+        <section id="why-us" class="why-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    WHY FR PREMIUM STORE
+                </span>
+
+                <h2>
+                    কেন আমাদের সঙ্গে
+                    <span>যোগাযোগ করবেন?</span>
+                </h2>
+
             </div>
 
-        </div>
-    </section>
 
-    <!-- Why Choose Us -->
-    <section id="why-us" class="why-us">
-        <h2>কেন FR Premium Store বেছে নেবেন?</h2>
-        <div class="features">
-            <div class="feature-box">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>দ্রুত ডেলিভারি</h3>
-                <p>পেমেন্ট কনফার্ম করার সাথে সাথেই সার্ভিস অ্যাক্টিভ করে দেওয়া হয়।</p>
-            </div>
-            <div class="feature-box">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>১০০% বিশ্বস্ততা</h3>
-                <p>নিরাপদ লেনদেন এবং ফুল ওয়ারেন্টি ও গ্যারান্টি।</p>
-            </div>
-            <div class="feature-box">
-                <i class="fa-solid fa-headset"></i>
-                <h3>২৪/৭ সাপোর্ট</h3>
-                <p>যেকোনো প্রয়োজনে হোয়াটসঅ্যাপে ইনস্ট্যান্ট চ্যাট সাপোর্ট পাবেন।</p>
-            </div>
-        </div>
-    </section>
+            <div class="features">
 
-    <!-- Footer -->
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>সহজ অর্ডার প্রক্রিয়া</h3>
+
+                    <p>
+                        ওয়েবসাইট থেকে সার্ভিস নির্বাচন করে
+                        সরাসরি WhatsApp-এর মাধ্যমে যোগাযোগ করতে পারবেন।
+                    </p>
+
+                </div>
+
+
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <h3>সরাসরি যোগাযোগ</h3>
+
+                    <p>
+                        মূল্য, মেয়াদ ও service details সম্পর্কে
+                        অর্ডারের আগে সরাসরি জেনে নিতে পারবেন।
+                    </p>
+
+                </div>
+
+
+                <div class="feature-box">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>Customer Support</h3>
+
+                    <p>
+                        সার্ভিস সম্পর্কিত প্রশ্ন থাকলে WhatsApp-এর মাধ্যমে
+                        আমাদের সঙ্গে যোগাযোগ করতে পারবেন।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <div class="cta-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <h2>
+                    আপনার প্রয়োজনীয় সার্ভিস খুঁজে পেয়েছেন?
+                </h2>
+
+                <p>
+                    মূল্য ও বিস্তারিত জানতে এখনই WhatsApp-এ যোগাযোগ করুন।
+                </p>
+
+                <button
+                    class="cta-btn"
+                    type="button"
+                    onclick="openWhatsApp('General Inquiry')">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp-এ যোগাযোগ করুন
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section id="faq" class="faq-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    FAQ
+                </span>
+
+                <h2>
+                    সাধারণ কিছু
+                    <span>প্রশ্ন</span>
+                </h2>
+
+            </div>
+
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button">
+
+                        সার্ভিসের মূল্য কোথায় পাব?
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            প্রতিটি সার্ভিসের মূল্য ও availability
+                            সময়ের সঙ্গে পরিবর্তিত হতে পারে।
+                            সর্বশেষ মূল্য জানতে WhatsApp-এ যোগাযোগ করুন।
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button">
+
+                        কীভাবে অর্ডার করব?
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            পছন্দের সার্ভিসের “বিস্তারিত জানতে”
+                            button-এ ক্লিক করে WhatsApp-এ মেসেজ করুন।
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button">
+
+                        অর্ডারের আগে কি বিস্তারিত জানতে পারব?
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            অবশ্যই। অর্ডার নিশ্চিত করার আগে মূল্য,
+                            মেয়াদ, availability এবং প্রয়োজনীয়
+                            service details সম্পর্কে জেনে নিতে পারবেন।
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button">
+
+                        সাহায্যের প্রয়োজন হলে কী করব?
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            যেকোনো প্রশ্নের জন্য সরাসরি WhatsApp-এ
+                            আমাদের সঙ্গে যোগাযোগ করুন।
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer id="contact">
+
         <div class="footer-content">
-            <h3>FR Premium Store</h3>
-            <p>আপনার বিশ্বস্ত ডিজিটাল সাবস্ক্রিপশন ও ভেরিফিকেশন পার্টনার।</p>
-            <div class="social-links">
-                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> ফেসবুক পেজ ভিজিট করুন</a>
-                <a href="https://wa.me/8801929138625" target="_blank"><i class="fa-brands fa-whatsapp"></i> সরাসরি WhatsApp-এ মেসেজ দিন</a>
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+
+                    <span class="logo-main">FR Premium</span>
+                    <span class="logo-sub">STORE</span>
+
+                </a>
+
+                <p>
+                    Premium digital services সম্পর্কে জানতে
+                    এবং অর্ডার করতে আমাদের সঙ্গে যোগাযোগ করুন।
+                </p>
+
             </div>
-            <p class="copy">&copy; 2026 FR Premium Store. All rights reserved.</p>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">হোম</a>
+                <a href="#products">সার্ভিসসমূহ</a>
+                <a href="#how-to-order">অর্ডার নিয়ম</a>
+                <a href="#faq">FAQ</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>যোগাযোগ</h3>
+
+                <a
+                    href="https://wa.me/8801929138625"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+
+                </a>
+
+                <a
+                    href="https://www.facebook.com/share/1E5ibin8Pm/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook Page
+
+                </a>
+
+            </div>
+
         </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 FR Premium Store. All rights reserved.
+            </p>
+
+            <a href="#home">
+
+                Back to top
+
+                <i class="fa-solid fa-arrow-up"></i>
+
+            </a>
+
+        </div>
+
     </footer>
 
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+
+    <button
+        class="floating-whatsapp"
+        type="button"
+        onclick="openWhatsApp('General Inquiry')"
+        aria-label="WhatsApp-এ যোগাযোগ করুন">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <span>Chat with us</span>
+
+    </button>
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+
+    </body>
 </html>
