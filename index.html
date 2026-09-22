@@ -20,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="#home">হোম</a></li>
-                <li><a href="#products">সাবস্ক্রিপশনস</a></li>
+                <li><a href="#products">সার্ভিসসমূহ</a></li>
                 <li><a href="#why-us">কেন আমরা?</a></li>
                 <li><a href="#contact">যোগাযোগ</a></li>
             </ul>
@@ -33,53 +33,73 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>ডুয়েল কারেন্সি কার্ড ছাড়াই কিনুন আপনার পছন্দের প্রিমিয়াম সাবস্ক্রিপশন!</h2>
-            <p>Netflix, Spotify, YouTube Premium, Canva Pro এবং আরও অনেক কিছু এখন বিকাশের মাধ্যমেই পান সুলভ মূল্যে, ইনস্ট্যান্ট ডেলিভারি।</p>
-            <a href="#products" class="btn">প্যাকেজগুলো দেখুন</a>
+            <h2>ডুয়েল কারেন্সি কার্ড ছাড়াই কিনুন আপনার পছন্দের প্রিমিয়াম সার্ভিস ও ভেরিফিকেশন!</h2>
+            <p>Facebook & Instagram Blue Verification, YouTube Premium, CapCut Pro, Gemini Pro এবং Canva Pro এখন সুলভ মূল্যে, ইনস্ট্যান্ট ডেলিভারি।</p>
+            <a href="#products" class="btn">সার্ভিসগুলো দেখুন</a>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Products/Services Section -->
     <section id="products" class="products-section">
         <h2>আমাদের প্রিমিয়াম সার্ভিসসমূহ</h2>
-        <p class="section-subtitle">আপনার পছন্দের প্যাকেজটি সিলেক্ট করে সরাসরি WhatsApp-এ অর্ডার করুন</p>
+        <p class="section-subtitle">পছন্দের সার্ভিসটি সিলেক্ট করে মূল্যের জন্য সরাসরি WhatsApp-এ মেসেজ দিন</p>
         <div class="product-grid">
             
-            <!-- Product 1: YouTube Premium -->
+            <!-- Service 1 -->
             <div class="product-card">
-                <div class="badge">Best Seller</div>
+                <div class="badge">Popular</div>
+                <i class="fa-solid fa-circle-check product-icon" style="color: #1877f2;"></i>
+                <h3>Facebook Verification & Ads</h3>
+                <p>Facebook Blue Verification এবং প্রফেশনাল Facebook Ads সার্ভিস।</p>
+                <div class="price">ইনবক্সে মূল্য জানুন</div>
+                <button class="buy-btn" onclick="openWhatsApp('Facebook Blue Verification & Ads Service')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="product-card">
+                <div class="badge">Trending</div>
+                <i class="fa-brands fa-instagram product-icon" style="color: #e4405f;"></i>
+                <h3>Instagram Blue Verification</h3>
+                <p>অফিশিয়াল নিয়মে আপনার ইনস্টাগ্রাম অ্যাকাউন্ট ভেরিফাইড করুন।</p>
+                <div class="price">ইনবক্সে মূল্য জানুন</div>
+                <button class="buy-btn" onclick="openWhatsApp('Instagram Blue Verification Service')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="product-card">
                 <i class="fa-brands fa-youtube product-icon" style="color: #ff0000;"></i>
                 <h3>YouTube Premium</h3>
-                <p>১ মাস / ৩ মাস / ৬ মাস (অ্যাড-ফ্রি এবং ব্যাকগ্রাউন্ড প্লে)</p>
-                <div class="price">৳ ১৫০/- থেকে শুরু</div>
-                <button class="buy-btn" onclick="openWhatsApp('YouTube Premium (৳ ১৫০/-)')">অর্ডার করতে WhatsApp করুন</button>
+                <p>অ্যাড-ফ্রি মিউজিক এবং ব্যাকগ্রাউন্ড প্লে সুবিধা।</p>
+                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
+                <button class="buy-btn" onclick="openWhatsApp('YouTube Premium Service')">অর্ডার করতে WhatsApp করুন</button>
             </div>
 
-            <!-- Product 2: Spotify Premium -->
+            <!-- Service 4 -->
             <div class="product-card">
-                <i class="fa-solid fa-music product-icon" style="color: #1db954;"></i>
-                <h3>Spotify Premium</h3>
-                <p>১ মাস / ব্যক্তিগত অ্যাকাউন্ট (আনলিমিটেড মিউজিক)</p>
-                <div class="price">৳ ১২০/-</div>
-                <button class="buy-btn" onclick="openWhatsApp('Spotify Premium (৳ ১২০/-)')">অর্ডার করতে WhatsApp করুন</button>
+                <i class="fa-solid fa-video product-icon" style="color: #000000;"></i>
+                <h3>CapCut Pro</h3>
+                <p>প্রিমিয়াম ভিডিও এডিটিং টেমপ্লেট ও ফিচার আনলকড।</p>
+                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
+                <button class="buy-btn" onclick="openWhatsApp('CapCut Pro Service')">অর্ডার করতে WhatsApp করুন</button>
             </div>
 
-            <!-- Product 3: Canva Pro -->
+            <!-- Service 5 -->
             <div class="product-card">
+                <i class="fa-solid fa-wand-magic-sparkles product-icon" style="color: #4285f4;"></i>
+                <h3>Gemini Premium</h3>
+                <p>গুগলের অ্যাডভান্সড এআই (Gemini Advanced) সাবস্ক্রিপশন।</p>
+                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
+                <button class="buy-btn" onclick="openWhatsApp('Gemini Premium Service')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="product-card">
+                <div class="badge">Best Value</div>
                 <i class="fa-solid fa-palette product-icon" style="color: #00c4cc;"></i>
                 <h3>Canva Pro</h3>
-                <p>লাইফটাইম / টিম ইনভাইট (প্রিমিয়াম ডিজাইন টুলস)</p>
-                <div class="price">৳ ১০০/-</div>
-                <button class="buy-btn" onclick="openWhatsApp('Canva Pro (৳ ১০০/-)')">অর্ডার করতে WhatsApp করুন</button>
-            </div>
-
-            <!-- Product 4: Netflix UHD -->
-            <div class="product-card">
-                <i class="fa-solid fa-tv product-icon" style="color: #e50914;"></i>
-                <h3>Netflix UHD</h3>
-                <p>১ মাস (শেয়ারড / প্রাইভেট স্ক্রিন, ৪কে রেজুলেশন)</p>
-                <div class="price">৳ ২৫০/-</div>
-                <button class="buy-btn" onclick="openWhatsApp('Netflix UHD (৳ ২৫০/-)')">অর্ডার করতে WhatsApp করুন</button>
+                <p>প্রিমিয়াম ডিজাইন টুলস, গ্রাফিক্স এবং আনলিমিটেড এলিমেন্টস।</p>
+                <div class="price">সুলভ মূল্যে উপলব্ধ</div>
+                <button class="buy-btn" onclick="openWhatsApp('Canva Pro Service')">অর্ডার করতে WhatsApp করুন</button>
             </div>
 
         </div>
@@ -92,17 +112,17 @@
             <div class="feature-box">
                 <i class="fa-solid fa-bolt"></i>
                 <h3>দ্রুত ডেলিভারি</h3>
-                <p>পেমেন্ট কনফার্ম করার ৫-১০ মিনিটের মধ্যে সাবস্ক্রিপশন ডেলিভারি দেওয়া হয়।</p>
+                <p>পেমেন্ট কনফার্ম করার সাথে সাথেই সার্ভিস অ্যাক্টিভ করে দেওয়া হয়।</p>
             </div>
             <div class="feature-box">
                 <i class="fa-solid fa-shield-halved"></i>
-                <h3>১০০% গ্যারান্টি</h3>
-                <p>সাবস্ক্রিপশনের মেয়াদ জুড়ে ফুল ওয়ারেন্টি ও রিপ্লেসমেন্ট গ্যারান্টি।</p>
+                <h3>১০০% বিশ্বস্ততা</h3>
+                <p>নিরাপদ লেনদেন এবং ফুল ওয়ারেন্টি ও গ্যারান্টি।</p>
             </div>
             <div class="feature-box">
                 <i class="fa-solid fa-headset"></i>
                 <h3>২৪/৭ সাপোর্ট</h3>
-                <p>যেকোনো সমস্যায় আমাদের হোয়াটসঅ্যাপে ইনস্ট্যান্ট চ্যাট সাপোর্ট পাবেন।</p>
+                <p>যেকোনো প্রয়োজনে হোয়াটসঅ্যাপে ইনস্ট্যান্ট চ্যাট সাপোর্ট পাবেন।</p>
             </div>
         </div>
     </section>
@@ -111,7 +131,7 @@
     <footer id="contact">
         <div class="footer-content">
             <h3>FR Premium Store</h3>
-            <p>আপনার বিশ্বস্ত ডিজিটাল সাবস্ক্রিপশন পার্টনার।</p>
+            <p>আপনার বিশ্বস্ত ডিজিটাল সাবস্ক্রিপশন ও ভেরিফিকেশন পার্টনার।</p>
             <div class="social-links">
                 <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> ফেসবুক পেজ ভিজিট করুন</a>
                 <a href="https://wa.me/8801929138625" target="_blank"><i class="fa-brands fa-whatsapp"></i> সরাসরি WhatsApp-এ মেসেজ দিন</a>
