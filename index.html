@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR Premium Store - Get Your Favorite Premium Subscriptions</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>FR Premium <span>Store</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#products">সাবস্ক্রিপশনস</a></li>
+                <li><a href="#why-us">কেন আমরা?</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+        <div class="cart-btn" onclick="openWhatsApp('General Inquiry')">
+            <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>ডুয়েল কারেন্সি কার্ড ছাড়াই কিনুন আপনার পছন্দের প্রিমিয়াম সাবস্ক্রিপশন!</h2>
+            <p>Netflix, Spotify, YouTube Premium, Canva Pro এবং আরও অনেক কিছু এখন বিকাশের মাধ্যমেই পান সুলভ মূল্যে, ইনস্ট্যান্ট ডেলিভারি।</p>
+            <a href="#products" class="btn">প্যাকেজগুলো দেখুন</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>আমাদের প্রিমিয়াম সার্ভিসসমূহ</h2>
+        <div class="product-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge">Best Seller</div>
+                <i class="fa-brands fa-youtube product-icon" style="color: #ff0000;"></i>
+                <h3>YouTube Premium</h3>
+                <p>১ মাস / ৩ মাস / ৬ মাস (অ্যাড-ফ্রি এবং ব্যাকগ্রাউন্ড প্লে)</p>
+                <div class="price">৳ ১৫০/- থেকে শুরু</div>
+                <button class="buy-btn" onclick="openWhatsApp('YouTube Premium')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <i class="fa-solid fa-music product-icon" style="color: #1db954;"></i>
+                <h3>Spotify Premium</h3>
+                <p>১ মাস / ব্যক্তিগত অ্যাকাউন্ট (আনলিমিটেড মিউজিক)</p>
+                <div class="price">৳ ১২০/-</div>
+                <button class="buy-btn" onclick="openWhatsApp('Spotify Premium')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <i class="fa-solid fa-palette product-icon" style="color: #00c4cc;"></i>
+                <h3>Canva Pro</h3>
+                <p>লাইফটাইম / টিম ইনভাইট (প্রিমিয়াম ডিজাইন টুলস)</p>
+                <div class="price">৳ ১০০/-</div>
+                <button class="buy-btn" onclick="openWhatsApp('Canva Pro')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <i class="fa-solid fa-tv product-icon" style="color: #e50914;"></i>
+                <h3>Netflix UHD</h3>
+                <p>১ মাস (শেয়ারড / প্রাইভেট স্ক্রিন, ৪কে রেজুলেশন)</p>
+                <div class="price">৳ ২৫০/-</div>
+                <button class="buy-btn" onclick="openWhatsApp('Netflix UHD')">অর্ডার করতে WhatsApp করুন</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us">
+        <h2>কেন FR Premium Store বেছে নেবেন?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>দ্রুত ডেলিভারি</h3>
+                <p>পেমেন্ট কনফার্ম করার ৫-১০ মিনিটের মধ্যে সাবস্ক্রিপশন ডেলিভারি দেওয়া হয়।</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>১০০% গ্যারান্টি</h3>
+                <p>সাবস্ক্রিপশনের মেয়াদ জুড়ে ফুল ওয়ারেন্টি ও রিপ্লেসমেন্ট গ্যারান্টি।</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>২৪/৭ সাপোর্ট</h3>
+                <p>যেকোনো সমস্যায় আমাদের হোয়াটসঅ্যাপে ইনস্ট্যান্ট চ্যাট সাপোর্ট পাবেন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>FR Premium Store</h3>
+            <p>আপনার বিশ্বস্ত ডিজিটাল সাবস্ক্রিপশন পার্টনার।</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> ফেসবুক পেজ ভিজিট করুন</a>
+                <a href="https://wa.me/8801929138625" target="_blank"><i class="fa-brands fa-whatsapp"></i> সরাসরি WhatsApp-এ মেসেজ দিন</a>
+            </div>
+            <p class="copy">&copy; 2026 FR Premium Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+      </html>
